@@ -1,58 +1,34 @@
-name: Page Build
+name: GitHub Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy
+  pull_request:
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-20.04
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Fetch all history for .GitInfo and .
-
-      - name: Typo check
-        uses: crate-ci/typos@v1.0.4
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.91.2"
+          hugo-version: "latest"
           extended: true
 
       - name: Build
-        run: hugo
-
-      - name: Check broken links
-        uses: ruzickap/action-my-broken-link-checker@v2
-        with:
-          url: https://${{ github.event.repository.name }}
-          pages_path: ./public
-          cmd_params: "\
-            --timeout=20 \
-            --max-connections=10 \
-            --max-response-body-size=70000000 \
-            -e linkedin.com \
-            -e twitter.com \
-            -e facebook.com \
-            -e gstatic.com \
-            -e researchgate.net \
-            -e arxiv.org \
-            -e valuenex.com \
-            -e challenge2018.isic-archive.com \
-            -e paper-survey \
-            -e publication/#\\d \
-            -e index.webmanifest \
-            -e honet-ict.org \
-            -e jsps.go.jp \
-            -e www.cikm2022.org \
-            -e .*.xml \
-            "
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages
-          cname: agiats.com
