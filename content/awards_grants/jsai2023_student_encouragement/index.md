@@ -10,7 +10,6 @@ categories: ["News"]
 date: 2023-09-21T00:00:00+09:00
 featured: false
 draft: false
-publishDate: 2023-11-30T00:00:00+09:00
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
