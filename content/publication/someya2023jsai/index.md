@@ -37,7 +37,7 @@ featured: false
 
 url_pdf: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1005/_pdf/-char/ja
 url_code:
-url_dataset: https://github.com/osekilab/JBLiMP
+url_dataset:
 url_poster:
 url_project:
 url_slides:

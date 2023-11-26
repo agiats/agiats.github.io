@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "チョムスキー階層とニューラル言語モデル."
+title: "チョムスキー階層とニューラル言語モデル"
 authors: ["染谷大河*", "吉田遼*", "中石海*", "濱西祐之介*", "大関洋平"]
 date: 2022-03
 doi: ""
