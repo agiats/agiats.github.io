@@ -27,4 +27,4 @@ image:
 projects: []
 ---
 
-[『サッカーイベント予測における選手ベクトルの利用』](https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1005/_article/-char/ja/)が[学生奨励賞]()を受賞しました。
+[『サッカーイベント予測における選手ベクトルの利用』](https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1005/_article/-char/ja/)が[学生奨励賞](https://www.ai-gakkai.or.jp/about/award/jsai_award-conf-s/)を受賞しました。
