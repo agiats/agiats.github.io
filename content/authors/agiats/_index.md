@@ -14,14 +14,14 @@ role: Master's student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Oseki Lab. @UTokyo
+  - name: Oseki Lab. @The University of Tokyo
     url: http://phiz.c.u-tokyo.ac.jp/~oseki/
 
 # Interests to show in About widget
 interests:
   - Natural Language Processing
   - Computational Linguistics
-  - Machine Learning in Soccer
+  - Deep Learning in Sports
   - Computer Vision
 
 # Education to show in About widget
@@ -71,5 +71,5 @@ highlight_name: true
 ---
 
 Taiga Someya is a Master's student at the Department of Language and Information Sciences, Graduate School of Arts and Sciences, University of Tokyo.
-He is a member of Oseki Lab. His research interests include Natural Language Processing/Computational Linguistics, Computer Vision and Soccer.
+He is a member of Oseki Lab. His research interests include Natural Language Processing/Computational Linguistics, Computer Vision and Sports Analytics.
 {style="text-align: justify;"}
