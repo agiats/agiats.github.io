@@ -3,7 +3,7 @@
 
 title: "『サッカーイベント予測における選手ベクトルの利用』が人工知能学会全国大会（第37回）学生奨励賞を受賞しました。"
 subtitle: ""
-summary: "詳細は[こちら](https://www.ai-gakkai.or.jp/about/award/jsai_award-conf-s/)からご覧いただけます。（[論文リンク](https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1005/_article/-char/ja/）"
+summary: "詳細は[こちら](https://www.ai-gakkai.or.jp/about/award/jsai_award-conf-s/)からご覧いただけます。 ([論文リンク](https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1005/_article/-char/ja/))"
 authors:
 tags: ["News", "Awards / Grants"]
 categories: ["News", "Awards / Grants"]
