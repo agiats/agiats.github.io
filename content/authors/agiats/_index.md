@@ -44,7 +44,7 @@ social:
     link: "/#contact"
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/T0a8i0g9a
+    link: https://twitter.com/agiats_football
     display:
       header: true
   - icon: github
