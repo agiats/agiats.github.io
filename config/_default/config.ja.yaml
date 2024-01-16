@@ -5,13 +5,13 @@
 
 title: agiats.me
 baseURL: "https://agiats.github.io/" # Website URL
-languageCode: English
+languageCode: 日本語
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: ja
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true

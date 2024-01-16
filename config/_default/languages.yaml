@@ -3,11 +3,41 @@
 #   Documentation: https://wowchemy.com/docs/guide/language/
 
 # Default language
+# Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+#contentDir: content/en
 en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
-
+  languageCode: English
+  weight: 1
+  contentDir: content/en
+ja:
+  languageCode: 日本語
+  weight: 2
+  contentDir: content/ja
+  title: agiats.me
+  params:
+    description: Site description in Chinese...
+  menu:
+    main:
+      - name: Home
+        url: "#01_about"
+        weight: 1
+      - name: News
+        url: "#02_news"
+        weight: 2
+      - name: Experience
+        url: "#03_experience"
+        weight: 3
+      - name: Recent Publications
+        url: "#04_recent_publications"
+        weight: 4
+      - name: Awards & Grants
+        url: "#05_awards_grants"
+        weight: 5
+      - name: Posts
+        url: "#06_posts"
+        weight: 6
+# Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+#contentDir: content/en
 # Uncomment the lines below to configure your website in a second language.
 #zh:
 #  languageCode: zh-Hans
